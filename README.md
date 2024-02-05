@@ -142,7 +142,7 @@ For injected applications, you can either:
 2. Rebuild apps in Bootstrap
 
 For TrollStore apps, you can either:
-1. Refresh app registrations form your persistence helper
+1. Refresh app registrations from your persistence helper
 2. Refresh icon cache in TrollStore
 
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.

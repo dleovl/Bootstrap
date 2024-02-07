@@ -47,7 +47,7 @@ If you're just reinstalling, you may want to backup your sources and tweaks. You
 
 Here's how to perform a safe uninstall:
 1. Disable EVERYTHING in App List. This is important, as to not break injected applications.
-2. `(Optional, *please read in its entirety*)` If you're forever leaving the Bootstrap, open the roothide application (`com.roothide.manager` in Sileo if it isn't installed, must be bootstrapped), click varClean from the bottom tabs, press 'Select All', and press 'Clean'. This will remove ALL jailbreak related files from `/var`. **You may experience issues with jailbreak detection in the future if you do not remove these files. Unfortunately, this may also remove files utilized by other TrollStore applications. Ensure not to remove those files specifically if you want to continue using them where they were left off.**
+2. **Read this step in it's entirety before doing anything.** Open the roothide application (`com.roothide.manager` in Sileo if it isn't installed, must be bootstrapped), click varClean from the bottom tabs, press 'Select All', and press 'Clean'. This will remove ALL jailbreak related files from `/var`. **You may experience issues with jailbreak detection in the future if you do not remove these files. Unfortunately, this may also remove files utilized by other TrollStore applications. Ensure not to remove those files specifically if you want to continue using them where they were left off.**
 4. Reboot your phone.
 5. Open Bootstrap settings and press uninstall.
 

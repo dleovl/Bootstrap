@@ -45,13 +45,15 @@ If you updated the Bootstrap before reading this, uninstall from within the app,
 Check out [issue #2](https://github.com/roothide/Bootstrap/issues/2) for the technical answer. This issue should have been fixed as of 1.1.0, but if it persists, make an issue on the `roothide/Bootstrap` repository. As of 1.1.0, notifications are programmatically fixed.
 
 ### How do I uninstall the Bootstrap?
-If you're uninstalling because of any bugs, let us know in the [GitHub issues](https://github.com/roothide/Bootstrap/issues). This will revert any SpringBoard injection tools.
+If you're uninstalling because of any bugs, let us know on [GitHub issues](https://github.com/roothide/Bootstrap/issues). Uninstalling will remove all files in `jbroot`, even those that assist with SpringBoard injection.
 
-You may want to backup your sources and tweaks. You can do this in Sileo by clicking the share button in the top-left corner of both the Sources and Installed tabs. You can copy and paste this list into your Notes app for safe-keeping.
-1. Disable EVERYTHING in App List.
-2. `(Optional, *please read in its entirety*)` If you're forever leaving the Bootstrap, open the roothide application (`com.roothide.manager` in Sileo if it isn't installed, must be bootstrapped), click varClean from the bottom tabs, press 'Select All', and press 'Clean'. This will remove ALL jailbreak related files from `/var`. **You may experience issues with jailbreak detection in the future if you do not remove these files. Unfortunately, this may also remove files utilized by other TrollStore applications. Ensure not to remove these if you want to continue using them where they were left off.**
+If you're just reinstalling, you may want to backup your sources and tweaks. You can do this in Sileo by clicking the share button in the top-left corner of both the Sources and Installed tabs. You can copy and paste this list into your Notes app for safe-keeping.
+
+Here's how to perform a safe uninstall:
+1. Disable EVERYTHING in App List. This is important, as to not break injected applications.
+2. `(Optional, *please read in its entirety*)` If you're forever leaving the Bootstrap, open the roothide application (`com.roothide.manager` in Sileo if it isn't installed, must be bootstrapped), click varClean from the bottom tabs, press 'Select All', and press 'Clean'. This will remove ALL jailbreak related files from `/var`. **You may experience issues with jailbreak detection in the future if you do not remove these files. Unfortunately, this may also remove files utilized by other TrollStore applications. Ensure not to remove those files specifically if you want to continue using them where they were left off.**
 4. Reboot your phone.
-5. Open Bootstrap and press uninstall.
+5. Open Bootstrap settings and press uninstall.
 
 Thank you for staying with us.
 

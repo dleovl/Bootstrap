@@ -41,11 +41,11 @@ Disable everything in App List, reboot, uninstall the bootstrap in the app, inst
 
 If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions, you'll need to enable (if nothing is enabled) then disable every application you had injected and do a *proper* uninstall. Your injected applications may cease to function if you update the bootstrap while a major revision was made behind the scenes without first disabling them.
 
-### Why are notifications broken / apps always asking for permissions?
-Check out [issue #2](https://github.com/roothide/Bootstrap/issues/2) for the technical answer. This issue should have been fixed as of 1.1.0, but if it persists, make an issue on the `roothide/Bootstrap` repository. As of 1.1.0, notifications are programmatically fixed.
+### Why are apps always asking for permissions?
+Check out [issue #2](https://github.com/roothide/Bootstrap/issues/2) for the technical answer.
 
 ### How do I uninstall the Bootstrap?
-If you're uninstalling because of any bugs, let us know on [GitHub issues](https://github.com/roothide/Bootstrap/issues). Uninstalling will remove all files in `jbroot`, even those that assist with SpringBoard injection.
+If you're uninstalling because of any bugs, let us know on [GitHub issues](https://github.com/roothide/Bootstrap/issues). Uninstalling will remove all files in `$(jbroot)`, even those that assist with SpringBoard injection.
 
 If you're just reinstalling, you may want to backup your sources and tweaks. You can do this in Sileo by clicking the share button in the top-left corner of both the Sources and Installed tabs. You can copy and paste this list into your Notes app for safe-keeping.
 

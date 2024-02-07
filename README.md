@@ -123,7 +123,7 @@ URL schemes are currently **disabled** to mitigate jailbreak detection. You will
 TrollStore versions 2.0.9 and later can enable developer mode for applications that require developer mode. Alternatively, you can enable developer mode by sideloading any application, by using software like [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode.
 
 ### Why are my apps gone / not opening?
-Because of how the bootstrap works, your injected applications may stop working or disappear on their own.
+Because of how the bootstrap handles injection, your injected applications may stop working or disappear on their own.
 
 For injected applications, you can either:
 1. Disable injection and respring
@@ -132,6 +132,8 @@ For injected applications, you can either:
 For TrollStore apps, you can either:
 1. Refresh app registrations from your persistence helper
 2. Refresh icon cache in TrollStore
+
+If you're using an unofficial method of SpringBoard injection, you may need to open the Bootstrap app and Restart Server on every userspace reboot.
 
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
 

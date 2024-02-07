@@ -74,7 +74,7 @@ You'll need to use `Directly Convert Simple Tweaks` for **rootful** tweaks and u
 
 Once the tweak is converted, press Ok and share the `.deb` with your package manager.
 
-### '**tweak** doesn't work, why?'
+### \*tweak name\* doesn't work, why?
 Some tweaks are currently not supported. This can either be due to lack of daemon support, or a poorly written tweak that has hardcoded rootful/rootless paths that cannot be patched.
 
 Here are some examples of known incompatible tweaks and why:

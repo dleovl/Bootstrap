@@ -60,11 +60,7 @@ Currently, only one **unofficial** method for SpringBoard injection is available
 - [Serotonin](https://github.com/mineek/Serotonin): A **safe** semi-jailbreak tool that works on top of roothide Bootstrap to provide partial support for SpringBoard tweaks.
 
 ### How do I convert tweaks?
-
-## Install tweaks
-When installing a tweak, you might see a message saying 'Not Updated'. This tweak will need to be updated to support the roothide Bootstrap.
-
-Install roothide Patcher (https://roothide.github.io/, refresh sources if it's blank).
+Install roothide Patcher (refresh sources if the roothide repository is blank).
 
 If you're using Sileo:
 
@@ -72,66 +68,62 @@ If you're using Sileo:
 
 If you're using Zebra:
 
-- Zebra only shows roothide tweaks, so you aren't able to install rootful/rootless tweaks without the deb file. Download the deb of the tweak you want to use (you can use [PostBox](https://postbox.news/) for rootful repos), export the deb to the Patcher, and install with Zebra.
+- Zebra only shows roothide tweaks, so you aren't able to install rootful/rootless tweaks without the `.deb` file itself. Download the `.deb` of the tweak you want to use (you can use [PostBox](https://postbox.news/) for rootful repos), and share the `.deb` to the Patcher app.
 
-When you convert a tweak, you'll need to directly convert simple tweaks for **rootful** tweaks and use the **rootless compat layer** for **rootless** tweaks (install rootless-compat as a dependancy).
+You'll need to use `Directly Convert Simple Tweaks` for **rootful** tweaks and use `Using Rootless Compat Layer` for **rootless** tweaks.
 
-Once the tweak is converted, press Ok and press your package manager from the share sheet. Add the tweak to your queue and run the queue.
+Once the tweak is converted, press Ok and share the `.deb` with your package manager.
 
-### Cask 3 doesn't save settings!
-Install [this fixed .deb](https://cdn.discordapp.com/attachments/1153426136802529280/1190903773606973470/com.ryannair05.cask3_1.0.2_iphoneos-arm64e.deb) with Sileo (pre-converted) (you may need to be in the [roothide Discord server](https://discord.com/invite/scqCkumAYp) for it to load)
+### '**tweak** doesn't work, why?'
+Some tweaks are currently not supported. This can either be due to lack of daemon support, or a poorly written tweak that has hardcoded rootful/rootless paths that cannot be patched.
 
-### Cask 3 doesn't work in Discord / other apps
-These apps will need to be decrypted and have an unsandbox entitlement like `get-task-allow` to allow the tweaks like Cask 3 to work. If this is too technical, ask in the [roothide Discord](https://discord.com/invite/scqCkumAYp).
-
-### '**tweakname** tweak doesn't work, why?'
-Some tweaks are currently not supported. This can either be due to lack of daemon support, or a poorly written tweak that has manual paths.
-These are some examples of incompatible tweaks:
-- iCleaner (Pro): Support for daemons is required.
-- Crane (Lite): Support for daemons is required, though you can manage through Preferences if you are **100%** sure you know what you're doing. Follow [this guide](https://github.com/roothide/Bootstrap/issues/11#issuecomment-1873340249) for instructions on how to use it within Preferences.
+Here are some examples of known incompatible tweaks and why:
+- iCleaner (Pro): Support for daemons is required. Use the [iCleaner CLI](https://siieo.github.io/) tweak.
+- Crane (Lite): Support for daemons is required, though you can partially manage through Preferences if you are **100%** sure you know what you're doing. Follow [this guide](https://github.com/roothide/Bootstrap/issues/11#issuecomment-1873340249) for instructions on how to use it within Preferences. **Be wary, this method isn't supported by Crane, nor does this method do anything advanced, rather automates the swapping of the actual data of containers on its own.**
 - Aemulo: Support for daemons is required.
 - Flex 3 Beta: This application breaks `com.apple.Preferences` when injected if you have it alongside PreferenceLoader. Use the [updated version](https://twitter.com/Dxcool223x/status/1741169030340243520).
-- iGameGod: Installing this tweak as an application (through Sileo) doesn't work because iGameGod only supports injection into 'User' applications. Use tweaks from [iOSGods](https://iosgods.com/) instead.
+- iGameGod: Installing this tweak as an application doesn't work because iGameGod only supports injection into 'User' applications. Use tweaks from [iOSGods](https://iosgods.com/) instead or inject the iGameGod `.dylib` into an `.ipa` and install with TrollStore.
 
 ### How do I change tweak settings?
 You have two solutions:
-1. Enable injection into `com.apple.Preferences` (please be wary that you are injecting into a system application, do this at your own risk) and install PreferenceLoader along with a tweak that has a preference bundle (ex. ShowTouch).
-2. Use TweakSettings by CreatureSurvive on the [CreatureCoding repository](https://creaturecoding.com/repo/) and respring for it to show up. **This is the safest alternative to people who DO NOT want to inject into system applications. While nothing bad will happen when injection system applications, you may use this as a safe fallback option.**
+1. Enable injection into `com.apple.Preferences`. Nothing will show up if you do not have any tweaks that have preference bundles, or do not have PreferenceLoader installed.
+2. Use TweakSettings by CreatureSurvive on the [CreatureCoding repository](https://creaturecoding.com/repo/). You will need to respring for the application to show up on your home screen.
 
 ## Technical
 - [Back to Table of Contents](#table-of-contents)
 ### Why do applications claim I'm still jailbroken?
 Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`.
 
-**Do not install Filza from roothide's repository in Sileo.** If you installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa). Make sure you don't have Filza enabled in the App List (unless you benefit from this, please test if injection into Filza helps with detection for you specifically).
+**Do not install Filza from roothide's repository in Sileo. Remove any Filza tweaks from Sileo.** If you've installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa). Make sure you don't have Filza enabled in the App List, as this will hinder App Library and Music Library (unless you benefit from injection).
 
-If your application still persists, attempt to uninstall it completely (disable injection first) and reinstall from the App Store.
+If your application still whines about a jailbreak, disable injection into the application, uninstall it, and reinstall from the App Store.
 
-You can report bad applications in [issue #48](https://github.com/roothide/Bootstrap/issues/48), please comment the link to the App Store landing page and how to reproduce the jailbreak detection warning (do you need to login?)
+You can report picky applications in [issue #48](https://github.com/roothide/Bootstrap/issues/48). Please include the link to the App Store landing page and how to reproduce the jailbreak detection warning (do you need to login? do you need to press any buttons?)
 
-### Can I use JIT?
-JIT by default works with applications specifically made to support JIT provided by TrollStore, but you can enable JIT for outdated applications by using the bootstrap if you don't want to inject with [TrollStoreJitEnabler](https://github.com/Rednick16/TrollStoreJitEnabler). Enabling injection into applications that require JIT with App List will allow JIT to be utilized.
+### How do I utilize JIT?
+JIT by default works with applications specifically made to support JIT provided by TrollStore. Enabling injection into applications that require JIT with App List will allow JIT to be utilized. This is mainly useful for enabling JIT outside of applications installed with TrollStore (as version 2.0.12 of TrollStore includes an 'Open with JIT' button).
 
 ## Other
 - [Back to Table of Contents](#table-of-contents)
 ### Why don't my apps say 'Open' in the App Store?
 Applications injected in App List will not show up in the App Store. **DO NOT** click the cloud download button unless you **100%** know what you're doing.
-To get it to say 'Open' again, disable injection in App List, and refresh icon cache in TrollStore.
+To get it to say 'Open' again, disable injection in App List, and refresh icon cache in TrollStore. You will need to do this if you are updating the application.
 
 ### How do I disable OTA updates?
 Turn off automatic updates in Settings, both iOS updates (installing and downloading) and security responses & system files. Delete any OTA update you have downloaded inside of Settings > General > i(Phone/Pad) Storage.
 
 Install the [OTADisabler app from ichitaso](https://github.com/ichitaso/file/raw/main/OTADisabler_1.0.0.tipa) and disable OTA updates.
 
+If you're hesistant to use a TrollStore app to block updates, follow the [Blocking Updates guide on ios.cfw.guide](https://ios.cfw.guide/blocking-updates/).
+
 ### Why don't my package managers have any URL schemes?
 URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
 
 ### How do I enable developer mode?
-
 TrollStore versions 2.0.9 and later can enable developer mode for applications that require developer mode. Alternatively, you can enable developer mode by sideloading any application, by using software like [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode.
 
 ### Why are my apps gone / not opening?
-Because of how the bootstrap works, your injected applications may stop working or disappear.
+Because of how the bootstrap works, your injected applications may stop working or disappear on their own.
 
 For injected applications, you can either:
 1. Disable injection and respring
@@ -147,5 +139,7 @@ Refreshing icon cache in TrollStore will make injected/Sileo installed applicati
 - [Back to Table of Contents](#table-of-contents)
 
 Thanks to everyone in the [roothide Discord server](https://discord.com/invite/scqCkumAYp) for making this possible!
+
+Additionally, thanks to the [r/Jailbreak Discord server](https://discord.gg/jb) members for giving useful insight / test results.
 
 ♡ dleovl

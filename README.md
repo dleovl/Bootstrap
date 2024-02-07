@@ -1,16 +1,15 @@
 # roothide Bootstrap FAQ
 
-**Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here to avoid malware)!
+**Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here to avoid malware)
 
 If you want something added/revised here, make a pull request or message me on Discord (@dleovl).
 
-DO NOT UPDATE YOUR PHONE NO MATTER WHAT!
-SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. Refer to this FAQ for tools you can use that enable SpringBoard support.
+SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. **Refer to this FAQ for unofficial tools you can use that enable SpringBoard injection.**
 
 **Has this repository helped you out? Give [this repo](https://github.com/dleovl/Bootstrap) a ⭐️ if so!**
 
 [Join the roothide Discord server](https://discord.com/invite/scqCkumAYp)!
-If you have an issue that isn't listed here, check the [issues](https://github.com/roothide/Bootstrap/issues). If it's still not there, ask in the [roothide Discord server](https://discord.com/invite/scqCkumAYp).
+If you have an issue that isn't listed here, check the [GitHub issues](https://github.com/roothide/Bootstrap/issues). If your issue isn't mentioned there, and you feel like it isn't good enough to make into a GitHub issue, feel free to ask in the roothide support channels!
 
 ## Table of Contents
 - [Bootstrap](#bootstrap)
@@ -22,24 +21,21 @@ If you have an issue that isn't listed here, check the [issues](https://github.c
 ## Bootstrap
 - [Back to Table of Contents](#table-of-contents)
 #### Do I need TrollStore for this bootstrap?
-YES! No TrollStore = Unsupported. No ifs, ands, or buts.
-If you are on a supported version to install TrollStore, use [this guide](https://ios.cfw.guide/installing-trollstore/) to install TrollStore.
+**Yes.** TrollStore is a requirement.
+
+If you are on a TrollStore supported iOS/iPadOS, use [this guide from ios.cfw.guide](https://ios.cfw.guide/installing-trollstore/) to install TrollStore.
 
 ### How do I build the roothide Bootstrap? (No PC/Mac required)
-Got a Mac and wanna use Xcode? [Use this README](https://github.com/dleovl/Bootstrap/blob/readme/README.md).
+Got a Mac and wanna use Xcode? Check out the `roothide/Bootstrap` README for build instructions.
 
-If not, check [here](https://discord.com/channels/1130859165942829106/1130859166488076331/1190488974528106607) for instructions on building with GitHub actions (must be in the [roothide Discord server](https://discord.com/invite/scqCkumAYp), this is also good for getting really crucial information). This `.yml` doesn't automatically update to the latest commit when a new one comes out, so you'll need to sync your fork every time a commit is made (it'll automatically build within 6 minutes). 'Error: Process completed with exit code 8.' means roothide Theos failed to install, manually dispatch the workflow again.
+If not, check [here](https://discord.com/channels/1130859165942829106/1130859166488076331/1190488974528106607) for instructions on building with GitHub actions (must be in the [roothide Discord server](https://discord.com/invite/scqCkumAYp). This `.yml` doesn't automatically update to the latest commit when a new one comes out, so you'll need to sync your fork every time a commit is made (it'll automatically build within 6 minutes). 'Error: Process completed with exit code 8.' means roothide Theos failed to install, manually dispatch the workflow again to fix it.
 
 ### How do I update the Bootstrap?
 **You don't need to do anything** besides rebooting, installing the new `.tipa`, and bootstrapping for **minor revision changes** past public 1.0.
 
-For updating between major beta versions, you may have to uninstall your bootstrap before updating. This isn't always a requirement for minor version revisions, but ensure you decrypt Bootstrap with [TrollDecryptor](https://github.com/wh1te4ever/TrollDecryptor) if you want to backup your build without cloning a commit.
+If you're coming from beta 3 or older, you'll need to uninstall the Bootstrap in its entirety. Refer to this FAQ for proper uninstallation instructions.
 
-You can export sources and tweaks in Sileo, preferences outside of $(jbroot) should be saved through uninstallation.
-
-Disable everything in App List, reboot, uninstall the bootstrap in the app, install your new `.tipa`, and bootstrap.
-
-If you updated the Bootstrap before reading this, uninstall from within the app, but make sure to Bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions, you'll need to enable (if nothing is enabled) then disable every application you had injected and do a *proper* uninstall. Your injected applications may cease to function if you update the bootstrap while a major revision was made behind the scenes without first disabling them.
+If you've updated the Bootstrap before reading this, uninstall the bootstrap from within the app, but make sure to bootstrap **immediately after**. Refer to this FAQ for proper uninstallation instructions.
 
 ### Why are apps always asking for permissions?
 Check out [issue #2](https://github.com/roothide/Bootstrap/issues/2) for the technical answer.
@@ -60,10 +56,8 @@ Thank you for staying with us.
 ## Tweaks
 - [Back to Table of Contents](#table-of-contents)
 ### How do I get SpringBoard tweaks to work?
-Currently, only one unofficial method for SpringBoard injection is available:
-- [Serotonin](https://github.com/mineek/Serotonin): A semi-non-ish-jailbreak tool that works on top of roothide Bootstrap to provide partial support for SpringBoard tweaks
-
-Refer to this FAQ for proper uninstallation instructions (reverting Serotonin / switching from kfdmineek).
+Currently, only one **unofficial** method for SpringBoard injection is available:
+- [Serotonin](https://github.com/mineek/Serotonin): A **safe** semi-jailbreak tool that works on top of roothide Bootstrap to provide partial support for SpringBoard tweaks.
 
 ### How do I convert tweaks?
 

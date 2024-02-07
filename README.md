@@ -133,7 +133,7 @@ For TrollStore apps, you can either:
 1. Refresh app registrations from your persistence helper
 2. Refresh icon cache in TrollStore
 
-If you're using an unofficial method of SpringBoard injection, you may need to open the Bootstrap app and Restart Server on every userspace reboot.
+You will need to open the Bootstrap app and press Restart Server on every userspace reboot. You'll need to respring if this affects SpringBoard injection.
 
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
 

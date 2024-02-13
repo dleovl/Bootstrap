@@ -74,6 +74,8 @@ You'll need to use `Directly Convert Simple Tweaks` for **rootful** tweaks and u
 
 Once the tweak is converted, press Ok and share the `.deb` with your package manager.
 
+Additionally, this prevents patched tweaks from being updated through Zebra. You will need to use Sileo to update (and patch) your tweaks.
+
 ### \*tweak name\* doesn't work, why?
 Some tweaks are currently not supported. This can either be due to lack of daemon support, or a poorly written tweak that has hardcoded rootful/rootless paths that cannot be patched.
 

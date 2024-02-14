@@ -81,10 +81,10 @@ Some tweaks are currently not supported. This can either be due to lack of daemo
 
 Here are some examples of known incompatible tweaks and why:
 - iCleaner (Pro): Support for daemons is likely required. Use the [iCleaner CLI](https://siieo.github.io/) tweak.
-- Crane (Lite): Crane / Crane Lite not work, as support for daemons is required, though you can partially manage through Preferences if you are **100%** sure you know what you're doing. Follow [this guide](https://github.com/roothide/Bootstrap/issues/11#issuecomment-1873340249) for instructions on how to use it within Preferences. **Be wary, this method isn't supported by Crane, nor does this method do anything advanced, rather automates the swapping of the actual data of containers on its own.** This is nothing more you can achieve with Filza and does not contain any safeguards and extra features like the fully functioning tweak would provide.
+- Crane (Lite): Crane / Crane Lite not work, as support for daemons is required, though you can partially manage through Preferences if you are **100%** sure you know what you're doing. Follow [this guide](https://github.com/roothide/Bootstrap/issues/11#issuecomment-1873340249) for instructions on how to use it within Preferences. **Be wary, this method isn't supported by Crane, nor does this method do anything advanced, rather automates the swapping of the actual data of containers on its own.** This is nothing more you can achieve with Filza and does not contain any safeguards and extra features like the fully functioning tweak with `cranehelperd` would provide.
 - Aemulo: Support for daemons is required.
 - Flex 3 Beta: This application breaks `com.apple.Preferences` when injected if you have it alongside PreferenceLoader. Use the [updated version](https://twitter.com/Dxcool223x/status/1741169030340243520).
-- Cask 3: This tweak needs to be properly updated for roothide, and to support sandboxed applications without entitlements like `get-task-allow`.
+- Cask 3: This tweak needs to be properly updated for roothide, and to support sandboxed applications without entitlements like `get-task-allow`. You will need to manually add an unsandboxing entitlement like `get-task-allow` to applications you want to use Cask 3 in.
 
 ### How do I change tweak settings?
 You have two solutions:

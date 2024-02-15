@@ -119,7 +119,7 @@ Install the [OTADisabler app from ichitaso](https://github.com/ichitaso/file/raw
 If you're hesistant to use a TrollStore app to block updates, follow the [Blocking Updates guide on ios.cfw.guide](https://ios.cfw.guide/blocking-updates/).
 
 ### Why don't my package managers have any URL schemes?
-URL schemes are currently **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
+URL schemes are **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
 
 ### How do I enable developer mode?
 TrollStore versions 2.0.9 and later can enable developer mode for applications that require developer mode. Alternatively, you can enable developer mode by sideloading any application, by using software like [Sideloadly](https://sideloadly.io/), [AltStore](https://altstore.io/), or Xcode.

@@ -87,7 +87,7 @@ Here are some examples of known incompatible tweaks and why:
 - Cask 3: This tweak needs to be properly updated for roothide, and to support sandboxed applications without entitlements like `get-task-allow`. You will need to manually add an unsandboxing entitlement like `get-task-allow` to applications you want to use Cask 3 in.
 
 ### How do I change tweak settings?
-You have two solutions:
+You have two solutions, either:
 1. Enable injection into `com.apple.Preferences`. Nothing will show up if you do not have any tweaks that have preference bundles, or do not have PreferenceLoader installed.
 2. Use TweakSettings by CreatureSurvive on the [CreatureCoding repository](https://creaturecoding.com/repo/). You will need to respring for the application to show up on your home screen.
 

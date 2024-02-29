@@ -4,7 +4,7 @@
 
 If you want something added/revised here, make a pull request or message me on Discord (@dleovl).
 
-SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on daemons. **Refer to this FAQ for unofficial tools you can use that enable SpringBoard injection.**
+SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on or modify daemons. **Refer to this FAQ for unofficial tools you can use that enable SpringBoard injection.**
 
 **Has this repository helped you out? Give [this repo](https://github.com/dleovl/Bootstrap) a ⭐️ if so!**
 

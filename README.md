@@ -1,5 +1,7 @@
 # roothide Bootstrap FAQ
 
+[![GitHub stars](https://img.shields.io/github/stars/dleovl/Bootstrap?style=social)](https://github.com/dleovl/Bootstrap/stargazers)
+
 **Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here to avoid malware)
 
 If you want something added/revised here, make a pull request or message me on Discord (@dleovl).

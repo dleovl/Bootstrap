@@ -96,7 +96,7 @@ You have two solutions, either:
 ## Technical
 - [Back to Table of Contents](#table-of-contents)
 ### Why do applications claim I'm still jailbroken?
-Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`.
+Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`. This will wipe some tweak preferences, but *greatly* assists in mitigating jailbreak detection.
 
 **Do not install Filza from roothide's repository in Sileo. Remove any Filza tweaks from Sileo.** If you've installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa). Make sure you don't have Filza enabled in the App List, as this will hinder App Library and Music Library (unless you benefit from injection).
 

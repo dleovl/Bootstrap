@@ -166,7 +166,7 @@ $(jbroot)var/cache/
 ```
 *If a folder is missing, for example `cache` is not in the `var` directory, make it. You need to end up with the directory structure intact.*
 
-3. Additionally, enter `$(jbroot)var/cache/apt/archives/` and make a blank file named `lock`.
+3. Enter `$(jbroot)var/cache/apt/archives/` and make a blank file named `lock`.
 
 #### Rootless
 While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps.

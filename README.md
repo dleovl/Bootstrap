@@ -171,6 +171,8 @@ $(jbroot)var/cache/
 #### Rootless
 While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps.
 
+If you do not have a sudo password set, please do so first by typing `sudo passwd`, else you won't be able to run the terminal commands properly.
+
 ## Credits
 - [Back to Table of Contents](#table-of-contents)
 

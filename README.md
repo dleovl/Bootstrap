@@ -55,36 +55,6 @@ Here's how to perform a safe uninstall:
 
 Thank you for staying with us.
 
-### Archives directory is missing
-If you get an error saying the following:
-```
-E: Archives directory /var/cache/apt/archives/partial is missing. - Acquire (2: No such file or directory)
-```
-... you need to create a few folders.
-
-#### roothide
-If you have a terminal, run the following commands:
-```
-sudo mkdir -p $(jbroot)var/cache/apt/archives/partial
-sudo mkdir $(jbroot)var/cache/locate
-sudo touch $(jbroot)var/cache/apt/archives/lock
-```
-If you do not have a terminal, install [TrollStore Filza](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa), and follow these instructions:
-
-1. Enter the directory `/var/containers/Bundle/Application/.jbroot-$(jbrand)/`, where `$(jbrand)` is a random string of hexadecimal characters. This directory will be referred to as `$(jbroot)`, remember it.
-
-2. Recursively make the following folders:
-```
-$(jbroot)var/cache/apt/archives/partial/
-$(jbroot)var/cache/
-```
-*If a folder is missing, for example `cache` is not in the `var` directory, make it. You need to end up with the directory structure intact.*
-
-3. Additionally, enter `$(jbroot)var/cache/apt/archives/` and make a blank file named `lock`.
-
-#### Rootless
-While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps.
-
 ## Tweaks
 - [Back to Table of Contents](#table-of-contents)
 ### How do I get SpringBoard tweaks to work?
@@ -170,6 +140,36 @@ For TrollStore apps, you can either:
 You will need to open the Bootstrap app and press Restart Server on every userspace reboot. You'll need to respring if this affects SpringBoard injection.
 
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
+
+### Archives directory is missing
+If you get an error saying the following:
+```
+E: Archives directory /var/cache/apt/archives/partial is missing. - Acquire (2: No such file or directory)
+```
+... you need to create a few folders.
+
+#### roothide
+If you have a terminal, run the following commands:
+```
+sudo mkdir -p $(jbroot)var/cache/apt/archives/partial
+sudo mkdir $(jbroot)var/cache/locate
+sudo touch $(jbroot)var/cache/apt/archives/lock
+```
+If you do not have a terminal, install [TrollStore Filza](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa), and follow these instructions:
+
+1. Enter the directory `/var/containers/Bundle/Application/.jbroot-$(jbrand)/`, where `$(jbrand)` is a random string of hexadecimal characters. This directory will be referred to as `$(jbroot)`, remember it.
+
+2. Recursively make the following folders:
+```
+$(jbroot)var/cache/apt/archives/partial/
+$(jbroot)var/cache/
+```
+*If a folder is missing, for example `cache` is not in the `var` directory, make it. You need to end up with the directory structure intact.*
+
+3. Additionally, enter `$(jbroot)var/cache/apt/archives/` and make a blank file named `lock`.
+
+#### Rootless
+While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps.
 
 ## Credits
 - [Back to Table of Contents](#table-of-contents)

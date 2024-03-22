@@ -146,7 +146,7 @@ If you get an error saying the following:
 ```
 E: Archives directory /var/cache/apt/archives/partial is missing. - Acquire (2: No such file or directory)
 ```
-... you need to create a few folders.
+... follow these instructions:
 
 #### roothide
 If you have a terminal, run the following commands:

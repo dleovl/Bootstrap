@@ -47,6 +47,8 @@ If you're uninstalling because of any bugs, let us know on [GitHub issues](https
 
 If you're just reinstalling, you may want to backup your sources and tweaks. You can do this in Sileo by clicking the share button in the top-left corner of both the Sources and Installed tabs. You can copy and paste this list into your Notes app for safe-keeping.
 
+If you're moving to a different jailbreak tool, you can still backup your sources (read last paragraph), but be wary of roothide alternative repositories. For example, the roothide Procursus repository should be removed from your source list before importing it to another jailbreak tool.
+
 Here's how to perform a safe uninstall:
 1. Disable EVERYTHING in App List. This is important, as to not break injected applications.
 2. **Read this step in it's entirety before doing anything.** Open the roothide application (`com.roothide.manager` in Sileo if it isn't installed, must be bootstrapped), click varClean from the bottom tabs, press 'Select All', and press 'Clean'. This will remove ALL jailbreak related files from `/var`. **You may experience issues with jailbreak detection in the future if you do not remove these files. Unfortunately, this may also remove files utilized by other TrollStore applications. Ensure not to remove those files specifically if you want to continue using them where they were left off.**

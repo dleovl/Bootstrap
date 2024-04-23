@@ -175,6 +175,8 @@ While this is extra for a roothide FAQ, the instructions are the same as roothid
 
 If you do not have a sudo password set, please do so first by typing `sudo passwd`, else you won't be able to run the terminal commands properly.
 
+***Please avoid using unofficial tweak patchers / piracy repositories as these can ruin the integrity of your jailbreak.***
+
 ## Credits
 - [Back to Table of Contents](#table-of-contents)
 

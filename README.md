@@ -144,6 +144,8 @@ You will need to open the Bootstrap app and press Restart Server on every usersp
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
 
 ### Archives directory is missing
+
+***Please avoid using unofficial tweak patchers / piracy repositories as these can ruin the integrity of your jailbreak / device. Continuing to use these tweaks will cause the issue to reappear, please remove the tweaks and cease usage to prevent further problems.***
 If you get an error saying the following:
 ```
 E: Archives directory /var/cache/apt/archives/partial is missing. - Acquire (2: No such file or directory)
@@ -171,11 +173,7 @@ $(jbroot)var/cache/
 3. Enter `$(jbroot)var/cache/apt/archives/` and make a blank file named `lock`.
 
 #### Rootless
-While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps.
-
-If you do not have a sudo password set, please do so first by typing `sudo passwd`, else you won't be able to run the terminal commands properly.
-
-***Please avoid using unofficial tweak patchers / piracy repositories as these can ruin the integrity of your jailbreak / device.***
+While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps. You must have a `sudo` password set to perform these commands.
 
 ## Credits
 - [Back to Table of Contents](#table-of-contents)

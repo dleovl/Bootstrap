@@ -1,14 +1,12 @@
 # roothide Bootstrap FAQ
 
-[![GitHub stars](https://img.shields.io/github/stars/dleovl/Bootstrap?style=social)](https://github.com/dleovl/Bootstrap/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/immoonlightsonata/Bootstrap?style=social)](https://github.com/immoonlightsonata/Bootstrap/stargazers)
 
 **Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here to avoid malware)
 
-If you want something added/revised here, make a pull request or message me on Discord (@dleovl).
-
 SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on or modify daemons. **Refer to this FAQ for unofficial tools you can use that enable SpringBoard injection.**
 
-**Has this repository helped you out? Give [this repo](https://github.com/dleovl/Bootstrap) a ⭐️ if so!**
+**Has this repository helped you out? Give [this repo](https://github.com/immoonlightsonata/Bootstrap) a ⭐️ if so!**
 
 [Join the roothide Discord server](https://discord.com/invite/scqCkumAYp)!
 If you have an issue that isn't listed here, check the [GitHub issues](https://github.com/roothide/Bootstrap/issues). If your issue isn't mentioned there, and you feel like it isn't good enough to make into a GitHub issue, feel free to ask in the roothide support channels!
@@ -26,11 +24,6 @@ If you have an issue that isn't listed here, check the [GitHub issues](https://g
 **Yes.** TrollStore is a requirement.
 
 If you are on a TrollStore supported iOS/iPadOS, use [this guide from ios.cfw.guide](https://ios.cfw.guide/installing-trollstore/) to install TrollStore.
-
-### How do I build the roothide Bootstrap? (No PC/Mac required)
-Got a Mac and wanna use Xcode? Check out the `roothide/Bootstrap` README for build instructions.
-
-If not, check [here](https://discord.com/channels/1130859165942829106/1130859166488076331/1190488974528106607) for instructions on building with GitHub actions (must be in the [roothide Discord server](https://discord.com/invite/scqCkumAYp). This `.yml` doesn't automatically update to the latest commit when a new one comes out, so you'll need to sync your fork every time a commit is made (it'll automatically build within 6 minutes). 'Error: Process completed with exit code 8.' means roothide Theos failed to install, manually dispatch the workflow again to fix it.
 
 ### How do I update the Bootstrap?
 **You don't need to do anything** besides rebooting, installing the new `.tipa`, and bootstrapping for **minor revision changes** past public 1.0.
@@ -61,7 +54,7 @@ Thank you for staying with us.
 - [Back to Table of Contents](#table-of-contents)
 ### How do I get SpringBoard tweaks to work?
 Currently, only one **unofficial** method for SpringBoard injection is available:
-- [Serotonin](https://github.com/mineek/Serotonin): A **safe** semi-jailbreak tool that works on top of roothide Bootstrap to provide partial support for SpringBoard tweaks.
+- [Serotonin](https://github.com/mineek/Serotonin): A **safe** semi-jailbreak tool that works on top of roothide Bootstrap to provide support for SpringBoard tweaks.
 
 ### How do I convert tweaks?
 Install roothide Patcher (refresh sources if the roothide repository is blank).
@@ -84,7 +77,7 @@ Additionally, this prevents patched tweaks from being updated through Zebra. You
 Some tweaks are currently not supported. This can either be due to lack of daemon support, or a poorly written tweak that has hardcoded rootful/rootless paths that cannot be patched.
 
 Here are some examples of known incompatible tweaks and why:
-- iCleaner (Pro): Support for daemons is likely required. Install [iCleaner Pro](https://ib-soft.net/cydia/) and run `sudo icleaner` in a terminal.
+- iCleaner (Pro): Support for daemons is likely required. Install [iCleaner Pro](https://ib-soft.net/cydia/) and run `sudo icleaner` in a terminal for an alternative.
 - Crane (Lite): Crane / Crane Lite does not work, as support for daemons is required, though you can partially manage through Preferences if you are **100%** sure you know what you're doing. Follow [this guide](https://github.com/roothide/Bootstrap/issues/11#issuecomment-1873340249) for instructions on how to use it within Preferences. **Be wary, this method isn't supported by Crane, nor does this method do anything advanced, rather automates the swapping of the actual data of containers on its own.** This is nothing more you can achieve with Filza and does not contain any safeguards and extra features like the fully functioning tweak with `cranehelperd` would provide.
 - Aemulo: Support for daemons is required.
 - Flex 3 Beta: This application breaks `com.apple.Preferences` when injected if you have it alongside PreferenceLoader. Use the [updated version](https://twitter.com/Dxcool223x/status/1741169030340243520).
@@ -100,9 +93,9 @@ You have two solutions, either:
 ### Why do applications claim I'm still jailbroken?
 Coming from a previous jailbreak, refer to #2 in the uninstallation guide in this FAQ to remove all jailbreak related files in `/var`. This will wipe some tweak preferences, but *greatly* assists in mitigating jailbreak detection.
 
-**Do not install Filza from roothide's repository in Sileo. Remove any Filza tweaks from Sileo.** If you've installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa). Make sure you don't have Filza enabled in the App List, as this will hinder App Library and Music Library (unless you benefit from injection).
+**Do not install Filza from roothide's repository in Sileo as it contains a modified binary. Remove any Filza tweaks from Sileo.** If you've installed Filza through TrollStore, replace it with the [no URL scheme version](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa). Make sure you don't have Filza enabled in the App List, as this will hinder App Library and Music Library (unless you greatly benefit from injection, though the crash will need to be mitigated).
 
-If your application still whines about a jailbreak, disable injection into the application, uninstall it, and reinstall from the App Store.
+If your application still complains about the presence of a jailbreak, disable injection into the application, uninstall it, and reinstall from the App Store.
 
 You can report picky applications in [issue #48](https://github.com/roothide/Bootstrap/issues/48). Please include the link to the App Store landing page and how to reproduce the jailbreak detection warning (do you need to login? do you need to press any buttons?)
 
@@ -120,7 +113,7 @@ Turn off automatic updates in Settings, both iOS updates (installing and downloa
 
 Install the [OTADisabler app from ichitaso](https://github.com/ichitaso/file/raw/main/OTADisabler_1.0.0.tipa) and disable OTA updates.
 
-If you're hesistant to use a TrollStore app to block updates, follow the [Blocking Updates guide on ios.cfw.guide](https://ios.cfw.guide/blocking-updates/).
+If you're hesistant to use a TrollStore app to block updates, follow the [Blocking Updates guide on ios.cfw.guide](https://ios.cfw.guide/blocking-updates/) for a temporary solution.
 
 ### Why don't my package managers have any URL schemes?
 URL schemes are **disabled** to mitigate jailbreak detection. You will need to manually copy repository URLs and paste them into the package managers yourself.
@@ -143,38 +136,6 @@ You will need to open the Bootstrap app and press Restart Server on every usersp
 
 Refreshing icon cache in TrollStore will make injected/Sileo installed applications disappear. Rebuild apps from within the Bootstrap app to make them appear again.
 
-### Archives directory is missing
-***Please avoid using unofficial tweak patchers / piracy repositories as these can ruin the integrity of your jailbreak / device. Continuing to use these tweaks will cause the issue to reappear, please remove the tweaks and cease usage to prevent further problems.***
-
-If you get an error saying the following:
-```
-E: Archives directory /var/cache/apt/archives/partial is missing. - Acquire (2: No such file or directory)
-```
-... follow these instructions:
-
-#### roothide
-If you have a terminal, run the following commands:
-```
-sudo mkdir -p $(jbroot)var/cache/apt/archives/partial
-sudo mkdir $(jbroot)var/cache/locate
-sudo touch $(jbroot)var/cache/apt/archives/lock
-```
-If you do not have a terminal, install [TrollStore Filza](https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa), and follow these instructions:
-
-1. Enter the directory `/var/containers/Bundle/Application/.jbroot-$(jbrand)/`, where `$(jbrand)` is a random string of hexadecimal characters. This directory will be referred to as `$(jbroot)`, remember it.
-
-2. Recursively make the following folders:
-```
-$(jbroot)var/cache/apt/archives/partial/
-$(jbroot)var/cache/
-```
-*If a folder is missing, for example `cache` is not in the `var` directory, make it. You need to end up with the directory structure intact.*
-
-3. Enter `$(jbroot)var/cache/apt/archives/` and make a blank file named `lock`.
-
-#### Rootless
-While this is extra for a roothide FAQ, the instructions are the same as roothide, though `$(jbroot)` is simply `/var/jb/`. Change all instances of `$(jbroot)` to `/var/jb/` and perform the same steps. You must have a `sudo` password set to perform these commands.
-
 ## Credits
 - [Back to Table of Contents](#table-of-contents)
 
@@ -182,4 +143,4 @@ Thanks to everyone in the [roothide Discord server](https://discord.com/invite/s
 
 Additionally, thanks to the [r/Jailbreak Discord server](https://discord.gg/jb) members for giving useful insight / test results.
 
-♡ dleovl
+♡ of what there's left to see

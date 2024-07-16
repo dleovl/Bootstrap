@@ -1,12 +1,12 @@
 # roothide Bootstrap FAQ
 
-[![GitHub stars](https://img.shields.io/github/stars/immoonlightsonata/Bootstrap?style=social)](https://github.com/immoonlightsonata/Bootstrap/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/imnltsa/Bootstrap?style=social)](https://github.com/imnltsa/Bootstrap/stargazers)
 
 **Public downloads are officially out!** Grab your `.tipa` [here](https://github.com/roothide/Bootstrap/releases) (and only here to avoid malware)
 
 SpringBoard tweaks *DO NOT WORK* currently by any *OFFICIAL* means. This also includes tweaks that rely on or modify daemons. **Refer to this FAQ for unofficial tools you can use that enable SpringBoard injection.**
 
-**Has this repository helped you out? Give [this repo](https://github.com/immoonlightsonata/Bootstrap) a ⭐️ if so!**
+**Has this repository helped you out? Give [this repo](https://github.com/imnltsa/Bootstrap) a ⭐️ if so!**
 
 [Join the roothide Discord server](https://discord.com/invite/scqCkumAYp)!
 If you have an issue that isn't listed here, check the [GitHub issues](https://github.com/roothide/Bootstrap/issues). If your issue isn't mentioned there, and you feel like it isn't good enough to make into a GitHub issue, feel free to ask in the roothide support channels!
